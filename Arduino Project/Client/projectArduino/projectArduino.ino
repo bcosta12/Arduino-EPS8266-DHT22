@@ -163,19 +163,18 @@ void loop(void){
         Serial.print(mux_id);
         Serial.println(" err");
     }
-    
-    char *te = "";
-    char *hu = "";
-    dtostrf(t, 4, 2, te);
-    dtostrf(h, 4, 2, hu);
-    wifi.send(mux_id, (const uint8_t*)te, strlen(te));
-    //delay(2000);
-    //wifi.send(',', 1);
-    //delay(2000);
-    // wifi.send(mux_id, (const uint8_t*)hu, strlen(hu));
-    //delay(2000);
-    
-    
+    // Format String to send via WiFi
+    String temp = String(t);
+    String humi = String(h);
+    String data =  temp+ "," + humi;
+    Serial.print(data);
+    int str_len = data.length() + 1;
+    char sendData[str_len];
+    data.toCharArray(sendData, str_len);
+    Serial.print(sendData);
+   
+    wifi.send(mux_id, (const uint8_t*)sendData, strlen(sendData));
+     
     uint32_t len = wifi.recv(mux_id, buffer, sizeof(buffer), 10000);
     if (len > 0) {
         Serial.print("Received:[");

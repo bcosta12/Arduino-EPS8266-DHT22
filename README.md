@@ -1,14 +1,16 @@
 # Arduino EPS8266 DHT22
 
-This Project connects an Arduino Uno who collects temperature, humidity.
+    This Project connects an Arduino Uno who collects temperature, humidity.
 I send the data in a UDP connection, that I programmed in Python language in the Server side and in C/C++ language in the Client (Arduino) side. 
 
 # The main idea of this project is:
 
 1 - Collect temperature and humidity from the DHT22 sensor;
+
 2 - Send this data via the UDP connection.
 
-# Acknolagenmet to Professor Diego Haddad from CEFET/RJ to make this project possible and the followings websites that I learn how to do this project.
+# Acknolagenmet
+    Thanks Professor Diego Haddad from CEFET/RJ to make this project possible and the followings websites that I learn how to do this project.
 
 bib:
 ----
@@ -23,4 +25,5 @@ bib:
 And so many others.
 
 
-# *Feel free to fork, comment, ask, criticism or suggest something to improve this project.
+#PS:
+    Feel free to fork, comment, ask, criticism or suggest something to improve this project.

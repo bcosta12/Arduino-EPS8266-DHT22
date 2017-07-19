@@ -3,9 +3,9 @@
 
 //------------------ wifi config ------------------
 
-#define SSID        "wozniak" //your wifi network name
-#define PASSWORD    "2orlando5123" //yout password
-#define HOST_NAME   "10.0.0.102" //ip of the server, must be the same of the python udp server (or other that you prefer)
+#define SSID        "nameOfWifi" //your wifi network name
+#define PASSWORD    "pass" //yout password
+#define HOST_NAME   "10.0.0.2" //ip of the server, must be the same of the python udp server (or other that you prefer)
 #define HOST_PORT   (5005) //port of the server, must be the same of the python udp servr (or other that you prefer)
 
 //------------------ dht22 config ------------------

@@ -1,9 +1,12 @@
 import threading
 import socket
 import logging
+import csv 
+import io
 
 ipServer = "10.0.0.102" #server IP
-portServer = 6000 #port yo connection
+portServer = 5005 #port yo connection
+
 class Broker():
 
     def __init__(self):
@@ -18,12 +21,16 @@ class Broker():
 
     def listen_clients(self):
         while True:
+            data = open("data.csv", 'a') # 'a' to append data without overwrite
             msg, client = self.sock.recvfrom(1024)
             logging.info('Received data from client %s: %s', client, msg)
+            data.write(msg+","+client[0]+"\n")
+            data.close()
             t = threading.Thread(target=self.talkToClient, args=(client,))
             t.start()
 
 if __name__ == '__main__':
+    
     # Make sure all log messages show up
     logging.getLogger().setLevel(logging.DEBUG)
 

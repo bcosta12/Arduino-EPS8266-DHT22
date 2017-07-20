@@ -19,13 +19,13 @@ bib:
     1 - Basic concepts:
         https://www.arduino.cc:
     
-    2 - WiFi ESP8266 exemples of other applications 
+    2 - WiFi ESP8266 exemples of other applications:
         https://www.embarcados.com.br/esp8266-com-arduino/
         
-    3 - DHTT22 How to use
+    3 - DHTT22 How to use:
         https://plot.ly/arduino/dht22-temperature-tutorial/
         
-    4 - How to format a String to send :
+    4 - How to format a String to send:
         http://www.piersoft.it/angolo-del-geek-arduino-temperatura-wifi-esp8266-thingspeak/#comment-601
         
     And so many others.

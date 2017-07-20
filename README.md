@@ -3,7 +3,7 @@
     This Project connects an Arduino Uno who collects temperature, humidity.
 I send the data in a UDP connection, that I programmed in Python language in the Server side and in C/C++ language in the Client (Arduino) side. 
 
-![alt text](Arduino-EPS8266-DHT22/arduinoCircuit.png)
+![alt text](arduinoCircuit.png)
 
 # The main idea of this project is:
 

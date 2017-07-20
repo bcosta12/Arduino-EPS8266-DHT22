@@ -12,7 +12,7 @@ I send the data in a UDP connection, that I programmed in Python language in the
     2 - Send this data via the UDP connection.
 
 # Acknolagenmet:
-    Thanks Professor Diego Haddad from CEFET/RJ to make this project possible and the followings websites that I learn how to do this project.
+    Thanks, Professor Diego Haddad from CEFET/RJ to make this project possible and the followings websites that I learn how to do this project.
 
 bib:
 ----
